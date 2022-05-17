@@ -1,0 +1,303 @@
+Request method:	POST
+Request URI:	https://api-ssl.bitly.com/v4/bitlinks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 61fdb654c5db3029deb30c8646d78df401e47c50
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "group_guid": "Bm5bfiIUP6g",
+    "domain": "bit.ly",
+    "long_url": "https://dev.bitly.com",
+    "title": "Bitly API Documentation",
+    "tags": [
+        "bitly",
+        "api"
+    ]
+}
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 17 May 2022 08:23:51 GMT
+Content-Type: application/json
+Content-Length: 318
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "created_at": "2022-05-11T16:18:29+0000",
+    "id": "bitly.is/3M9ZOKC",
+    "link": "https://bitly.is/3M9ZOKC",
+    "custom_bitlinks": [
+        
+    ],
+    "long_url": "https://dev.bitly.com/",
+    "title": "Bitly API Documentation",
+    "archived": false,
+    "tags": [
+        "bitly",
+        "api"
+    ],
+    "deeplinks": [
+        
+    ],
+    "references": {
+        "group": "https://api-ssl.bitly.com/v4/groups/Bm5bfiIUP6g"
+    }
+}
+Request method:	POST
+Request URI:	https://api-ssl.bitly.com/v4/bitlinks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 61fdb654c5db3029deb30c8646d78df401e47c50
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "group_guid": "Bm5bfiIUP6g",
+    "deeplinks": [
+        {
+            "install_url": "https://play.google.com/store/apps/details?id=com.bitly.app&hl=en_US",
+            "app_uri_path": "/store?id=123456",
+            "app_id": "com.bitly.app",
+            "install_type": "promote_install"
+        }
+    ],
+    "domain": "bit.ly",
+    "long_url": "https://dev.bitly.com",
+    "title": "Bitly API Documentation",
+    "tags": [
+        "bitly",
+        "api"
+    ]
+}
+HTTP/1.1 402 Payment Required
+Server: nginx
+Date: Tue, 17 May 2022 08:23:52 GMT
+Content-Type: application/json
+Content-Length: 124
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "message": "UPGRADE_REQUIRED",
+    "resource": "deeplinks",
+    "description": "You must upgrade your account to access this resource."
+}
+Request method:	POST
+Request URI:	https://api-ssl.bitly.com/v4/bitlinks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 61fdb654c5db3029deb30c8646d78df401e47c50
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "group_guid": "Bm5bfiIUP6g",
+    "domain": "bit.ly",
+    "long_ur": "https://dev.bitly.com",
+    "title": "Bitly API Documentation",
+    "tags": [
+        "bitly",
+        "api"
+    ]
+}
+HTTP/1.1 400 Bad Request
+Server: nginx
+Date: Tue, 17 May 2022 08:23:53 GMT
+Content-Type: application/json
+Content-Length: 158
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "message": "INVALID_ARG_LONG_URL",
+    "resource": "bitlinks",
+    "description": "The value provided is invalid.",
+    "errors": [
+        {
+            "field": "long_url",
+            "error_code": "invalid"
+        }
+    ]
+}
+Request method:	GET
+Request URI:	https://api-ssl.bitly.com/v4/bitlinks/bit.ly/3M9ZOKC
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 61fdb654c5db3029deb30c8646d78df401e47c50
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 17 May 2022 08:23:54 GMT
+Content-Type: application/json
+Content-Length: 402
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "created_at": "2022-05-11T16:18:29+0000",
+    "id": "bitly.is/3M9ZOKC",
+    "link": "https://bitly.is/3M9ZOKC",
+    "custom_bitlinks": [
+        
+    ],
+    "long_url": "https://dev.bitly.com/",
+    "title": "Bitly API Documentation",
+    "archived": false,
+    "created_by": "agangadhar007",
+    "client_id": "a5e8cebb233c5d07e5c553e917dffb92fec5264d",
+    "tags": [
+        "bitly",
+        "api"
+    ],
+    "deeplinks": [
+        
+    ],
+    "references": {
+        "group": "https://api-ssl.bitly.com/v4/groups/Bm5bfiIUP6g"
+    }
+}
+Request method:	GET
+Request URI:	https://api-ssl.bitly.com/v4/groups/Bm5bfiIUP6g
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 61fdb654c5db3029deb30c8646d78df401e47c50
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 17 May 2022 08:23:55 GMT
+Content-Type: application/json
+Content-Length: 287
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "created": "2022-05-11T15:45:40+0000",
+    "modified": "2022-05-11T15:45:40+0000",
+    "bsds": [
+        
+    ],
+    "guid": "Bm5bfiIUP6g",
+    "organization_guid": "Om5bfdBaa1d",
+    "name": "agangadhar007",
+    "is_active": true,
+    "role": "org-admin",
+    "references": {
+        "organization": "https://api-ssl.bitly.com/v4/organizations/Om5bfdBaa1d"
+    }
+}
+Request method:	GET
+Request URI:	https://api-ssl.bitly.com/v4/groups/abcdef
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 61fdb654c5db3029deb30c8646d78df401e47c50
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Tue, 17 May 2022 08:23:56 GMT
+Content-Type: application/json
+Content-Length: 112
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "message": "FORBIDDEN",
+    "resource": "groups",
+    "description": "You are currently forbidden to access this resource."
+}
+Request method:	GET
+Request URI:	https://api-ssl.bitly.com/v4/groups/Bm5bfiIUP6g/abc
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 61fdb654c5db3029deb30c8646d78df401e47c50
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Tue, 17 May 2022 08:23:56 GMT
+Content-Type: text/plain; charset=utf-8
+Content-Length: 19
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+404 page not found
+
